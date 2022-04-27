@@ -1,6 +1,6 @@
 # Get started with using this React Search Bar App!
 
-This small web app was created for a technical interview.
+This small web app was created for a technical interview. The API endpoint used for this application is: https://pixabay.com/api/
 
 ## Available Scripts
 
