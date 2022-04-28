@@ -4,8 +4,10 @@ This small web app was created for a technical interview. This application works
 
 ## Available Scripts
 
-You can run the application by using:
-
+You can run the application by first downloading all dependencies:
+### `npm i`
+ 
+After downloading the dependencies, you can run the application with:
 ### `npm start`
 
 Runs the app in the development mode.\
