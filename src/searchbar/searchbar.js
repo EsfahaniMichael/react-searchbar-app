@@ -1,16 +1,33 @@
 import { React, useState, useRef, useEffect } from "react";
+import queryImage from "../lib/api";
 
+function Searchbar({updateImage}) {
+    const [query, updateQuery] = useState("");
+    console.log(query)
 
+    const searchApi = async (e) => {
+        e.preventDefault();
+        console.log("Submitting the Form")
+        let queryResponse = await queryImage(query);
+        console.log('query response ', queryResponse);
+        updateImage(queryResponse)
+    }
 
+  return (
+    <>
+      <form onSubmit={searchApi}>
+        <input type="text" placeholder="Search Images" value={query}
+    onChange={(e) => updateQuery(e.target.value)}/>
+        <button
+          type="submit"
+          value="Submit"
+          className="waves-effect waves-light btn"
+        >
+          Search
+        </button>
+      </form>
+    </>
+  );
+}
 
-const Searchbar = () => (
-    <form action="/" method="get">
-        <input
-            type="text"
-            placeholder="Search Images"
-        />
-        <button type="submit" value="Submit" className="waves-effect waves-light btn">Search</button>
-    </form>
-);
-
-  export default Searchbar;
+export default Searchbar;

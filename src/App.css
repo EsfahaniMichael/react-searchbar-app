@@ -3,6 +3,7 @@
 }
 .searchBarWindow{
   align-items: center;
+  margin-bottom: 50px;
 }
 .searchBarWindow > * {
   display: inline-table;
@@ -10,8 +11,12 @@
 }
 
 .imageWindow{
-  height:500px;
-  background:yellow;
+}
+
+.imageBlock{
+  width: 200px;
+  height:150px;
+  object-fit: cover;
 }
 
 
