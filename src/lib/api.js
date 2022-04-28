@@ -14,8 +14,8 @@ async function queryImage(query){
     try{
         const response = await axios.get(apiCall)
         // Ideally I would paginate response, but for sake of time I am
-        // selecting the first 9 images in the response.
-        for(var i = 0; i < 9;i++){
+        // selecting the first 20 images in the response.
+        for(let i = 0; i < 19;i++){
             responseArr.push(response.data.hits[i].webformatURL);
         }
         
