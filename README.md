@@ -1,6 +1,6 @@
 # Get started with Search IQ!
 
-This small web app was created for a technical interview. The API being used for this application is: https://pixabay.com/api/
+This small web app was created for a technical interview. This application works as a simple search engine, allowing users to search for images related to the keywords they enter. The API being used for this application is: https://pixabay.com/api/
 
 ## Available Scripts
 
