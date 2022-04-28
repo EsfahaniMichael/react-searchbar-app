@@ -1,4 +1,4 @@
-# Get started with using this React Search Bar App!
+# Get started with Search IQ!
 
 This small web app was created for a technical interview. The API being used for this application is: https://pixabay.com/api/
 
